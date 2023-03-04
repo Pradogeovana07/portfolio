@@ -1,0 +1,252 @@
+.App {
+  text-align: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --pink: rgb(255 105 180);
+  --shadow: 0 20px 30px rgba(104, 104, 104, 3);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ccc;
+  line-height: 1.4;
+}
+
+span {
+  color: var(--pink)
+}
+
+.header-container {
+  background-color: #d7d1d1;
+  font-size: 25px;
+  height: 250px;
+  position: sticky;
+  top: 0;
+  box-shadow: 20px 20px 50px 10px rgb(175, 134, 141) inset;
+}
+
+h1 {
+  height: 200px;
+  padding-top: 60px;
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+}
+
+nav {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--dark);
+  box-shadow: 0 6px 10px rgba(104, 104, 104, 0.8);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--light)
+}
+
+nav a:hover {
+  color: var(--pink);
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+}
+/*---"about me section--- */
+.aboutme-container {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding-top: 45px;
+}
+
+.aboutme {
+  margin-top:30px;
+  min-height:400px;
+  box-shadow: var(--shadow);
+}
+
+.profilepic {
+  min-height: 300px;
+  width: 300px;
+  background-image: url("./profilepic.png");
+  background-size: cover;
+  background-color: #333;
+}
+
+.bio {
+  min-height: 300px;
+  width: 600px;
+  background-color:lightgreen; 
+}
+.bio h2 {
+  margin-top: 50px;
+}
+
+/* ---work container--- */
+.mywork-container {
+ padding: 20px;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-content: flex-start; 
+ background-color: lightgreen;
+}
+
+.flexitem {
+  margin: 10px;
+  box-shadow: var(--shadow);
+}
+
+.flexitem h2 {
+  width: 250px;
+  font-size: 40px;
+  text-align: center;
+  background-color: var(--light);
+}
+
+.flexitem a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.flexitem a:hover {
+  color: var(--pink);
+}
+
+.css {
+  width:800px;
+  min-height: 400px;
+  flex-shrink: 1; 
+  background-image: url("./css.jpg");
+  background-size: cover;
+}
+
+.javascript {
+  width: 400px;
+  min-height: 200px;
+  flex-grow: 1; 
+  background-image: url("./Javascript.jpg");
+  background-size: cover;
+}
+
+.html {
+  width: 400px;
+  min-height: 200px;
+  flex-grow: 1; 
+  background-image: url("./html.jpg");
+  background-size: cover;
+}
+
+/* -----footer--------- */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  /* background-color: aqua; */
+  height: 200px;
+}
+
+.flexfooter {
+  color: var(--dark);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin:auto;
+}
+
+.flexfooter h2 {
+  font-size: 30px;
+  color: var(--light);
+  background-color: #333;
+}
+
+.flexfooter a{
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.flexfooter a:hover {
+  color: var(--pink)
+}
+
+/* ----media ---- */
+@media screen and (max-width:468px){ 
+  h1 {
+      font-size: 50px;
+      padding-top: 10px;
+      }
+  .header-container {
+       display: flex;
+       flex-direction: column;
+       height:350px;
+       position: static;
+      }
+  
+      
+   nav {
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-around;
+       }
+
+  .nav a:hover {
+      display: block;
+      }
+
+  .nav a {
+      display: none;
+      position: absolute;
+       }
+  .profilepic {
+       margin-top: 10px;;
+       }
+  } 
+
+@media screen and (min-width:646px) and (max-width:1023) { 
+  nav {
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-around; 
+  } 
+ } 
+
+
+
+
+
+
+
+
+
